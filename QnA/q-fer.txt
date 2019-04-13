@@ -1,0 +1,27 @@
+Halo
+Hi
+Selamat Pagi
+Selamat Siang
+Selamat Sore
+Selamat Malam
+Apa Python?
+Apa itu Python Software Foundation?
+Bagaimana cara mendapatkan dokumentasi Python?
+Bagaimana cara belajar Python?
+Mengapa Python disebut Python?
+Berapa banyak orang yang menggunakan Python?
+Apakah ada proyek signifikan yang dilakukan dengan Python?
+Perkembangan baru apa yang diharapkan untuk Python di masa depan?
+Apakah Python adalah bahasa yang baik untuk pemrogram pemula? 
+Apakah ada standar pengkodean atau panduan gaya untuk program Python?
+Bagaimana cara berbagi variabel global di seluruh modul?
+Apa perbedaan antara argumen dan parameter?
+Bagaimana cara menyalin objek dengan Python?
+Program saya terlalu lambat. Bagaimana cara mempercepatnya?
+Apa itu kelas?
+Apa itu objek?
+Apa itu metode?
+Bagaimana cara membuat file .pyc?
+Bagaimana cara menemukan modul atau aplikasi untuk melakukan tugas X? 
+Apa toolkit GUI platform-independen yang ada untuk Python?
+Bisakah saya menghapus Python?

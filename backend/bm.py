@@ -14,6 +14,7 @@ def lastOcc(pattern):
 - Sudah diubah ke dalam bentuk kata dasarnya
 - Sudah menghilangkan stopwords '''
 
+# Mengembalikan 0 jika tidak ditemukan pattern, mengembalikan 1 jika ditemukan pattern
 def boyerMoore(question_user, question_database):
 		#Preprocessing pattern, membuat array of last occurrence
 	last = lastOcc(question_database)
@@ -24,13 +25,13 @@ def boyerMoore(question_user, question_database):
 	j = m-1;
 	
 	if (i>n-1): #Pattern lebih panjang dari text
-		return -1
+		return 0 
 	
 		# Periksa teks untuk menemukan pattern
 	while (i<=n-1):
 		if (question_database[j] == question_user[i]):
 			if (j == 0): # Sudah semua dicek
-				return i
+				return 1
 			else:
 				i-=1
 				j-=1
@@ -40,4 +41,4 @@ def boyerMoore(question_user, question_database):
 			j = m-1 #J new adalah index terakhir pattern
 	
 	
-	return -1
+	return 0

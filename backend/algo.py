@@ -10,7 +10,7 @@ def answer(question_user):
             return sample_db[q_db]
         elif boyerMoore(question_user, q_db) > 0.9:
             return sample_db[q_db]
-        elif regex_sample(question_user, q_db) > 0.9:
+        elif regex_sample(question_user, q_db) == True :
             return sample_db[q_db]
     top_three = [KMP(question_user, q_db) for q_db in sample_db]
     top_three.sort()

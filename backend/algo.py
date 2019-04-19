@@ -1,4 +1,4 @@
-from .utils import *
+from .utils import sample_db
 from .kmp import KMP
 from .bm import boyerMoore
 from .regex import regex_sample
@@ -10,7 +10,7 @@ def answer(question_user):
             return sample_db[q_db]
         elif boyerMoore(question_user, q_db) > 0.9:
             return sample_db[q_db]
-        elif regex_sample(question_user, q_db) == True :
+        elif regex_sample(question_user, q_db):
             return sample_db[q_db]
     top_three = [KMP(question_user, q_db) for q_db in sample_db]
     top_three.sort()

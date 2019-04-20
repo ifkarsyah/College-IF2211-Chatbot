@@ -1,0 +1,85 @@
+Halo. Namaku Karen, ada yang ingin kamu tanyakan?
+Hi. Namaku Karen, ada yang ingin kamu tanyakan?
+Selamat Pagi. Namaku Karen, ada yang ingin kamu tanyakan?
+Selamat Siang. Namaku Karen, ada yang ingin kamu tanyakan?
+Selamat Sore. Namaku Karen, ada yang ingin kamu tanyakan?
+Selamat Malam. Namaku Karen, ada yang ingin kamu tanyakan?
+Python adalah salah satu bahasa pemrograman yang sangat powerfull dan mudah untuk dipelajari. Python memiliki struktur data tingkat tinggi yang sangat efisien dan sederhana tapi efektif untuk penerapan pemrograman berorientasi objek.
+Python Software Foundation adalah organisasi independen dan nonprofit organization yang memegang hak cipta Python 2.1 dan seterusnya.
+Kamu bisa mendapatkannya di https://docs.python.org/3/
+Kamu bisa belajar dari https://docs.python.org/3/tutorial/index.html#tutorial-index
+Ketika mulai menerapkan Python, Guido van Rossum juga membaca skrip yang diterbitkan dari "Monty Python's Flying Circus", sebuah serial komedi BBC dari tahun 1970-an. Van Rossum berpikir dia membutuhkan nama yang pendek, unik, dan sedikit misterius, jadi dia memutuskan untuk memanggil bahasa Python.
+Mungkin ada puluhan ribu pengguna, meskipun sulit untuk mendapatkan jumlah yang pasti.
+Lihat https://www.python.org/about/success untuk daftar proyek yang menggunakan Python. Konsultasi proses untuk konferensi Python masa lalu akan mengungkapkan kontribusi dari berbagai perusahaan dan organisasi.
+Lihat https://www.python.org/dev/peps/ untuk Proposal Peningkatan Python (PEPs). PEP adalah dokumen desain yang menggambarkan fitur baru yang disarankan untuk Python, memberikan spesifikasi teknis yang ringkas dan alasannya. Cari PEP berjudul "Jadwal Rilis Python XY", di mana XY adalah versi yang belum dirilis secara publik.
+Iya nih. Masih umum untuk memulai siswa dengan bahasa prosedur dan jenis statis seperti Pascal, C, atau subset dari C ++ atau Java. Siswa mungkin lebih baik dilayani dengan mempelajari Python sebagai bahasa pertama mereka. Python memiliki sintaks yang sangat sederhana dan konsisten serta pustaka standar yang besar dan, yang paling penting, menggunakan Python dalam kursus pemrograman awal memungkinkan siswa berkonsentrasi pada keterampilan pemrograman penting seperti dekomposisi masalah dan desain tipe data. Dengan Python, siswa dapat dengan cepat diperkenalkan dengan konsep-konsep dasar seperti loop dan prosedur. Mereka bahkan dapat bekerja dengan objek yang ditentukan pengguna dalam kursus pertama mereka.
+Iya nih. Gaya pengkodean yang diperlukan untuk modul perpustakaan standar didokumentasikan sebagai PEP 8
+Cara kanonik untuk berbagi informasi lintas modul dalam satu program adalah membuat modul khusus (sering disebut config atau cfg). Cukup impor modul konfigurasi di semua modul aplikasi Anda; modul kemudian tersedia sebagai nama global. Karena hanya ada satu instance dari setiap modul, setiap perubahan yang dilakukan pada objek modul tercermin di mana-mana. 
+Parameter didefinisikan oleh nama-nama yang muncul dalam definisi fungsi, sedangkan argumen adalah nilai yang benar-benar diteruskan ke fungsi saat memanggilnya. Parameter menentukan jenis argumen apa yang bisa diterima fungsi.
+Secara umum, coba copy.copy()atau copy.deepcopy()untuk kasus umum. Tidak semua objek dapat disalin, tetapi sebagian besar bisa.
+Membuat algoritme Anda lebih cepat (atau mengubahnya menjadi lebih cepat) dapat menghasilkan manfaat yang jauh lebih besar daripada mencoba menaburkan trik optimasi mikro di seluruh kode Anda.
+Kelas adalah tipe objek tertentu yang dibuat dengan mengeksekusi pernyataan kelas. Objek kelas digunakan sebagai templat untuk membuat objek instan, yang mewujudkan data (atribut) dan kode (metode) khusus untuk tipe data.
+Objek adalah instan dari kelas. 
+Metode adalah fungsi pada kelas.
+Ketika modul diimpor untuk pertama kalinya (atau ketika file sumber telah berubah sejak file terkompilasi saat ini dibuat) .pycfile yang berisi kode yang dikompilasi harus dibuat dalam __pycache__subdirektori dari direktori yang berisi .pyfile. The .pycFile akan memiliki nama file yang dimulai dengan nama yang sama dengan .pyfile, dan berakhir dengan .pyc, dengan komponen menengah yang tergantung pada tertentu python biner yang menciptakannya. (LihatPEP 3147 untuk detail.)
+Periksa Referensi Perpustakaan untuk melihat apakah ada modul perpustakaan standar yang relevan. (Akhirnya Anda akan mempelajari apa yang ada di perpustakaan standar dan akan dapat melewati langkah ini.)
+Tergantung pada platform apa yang Anda tuju, ada beberapa. Beberapa dari mereka belum porting ke Python 3. Setidaknya Tkinter dan Qt diketahui kompatibel dengan Python 3.
+Itu tergantung dari mana Python berasal. Jika seseorang menginstalnya dengan sengaja, Anda dapat menghapusnya tanpa melukai apa pun. Di Windows, gunakan ikon Tambah / Hapus Program di Panel Kontrol. Jika Python diinstal oleh aplikasi pihak ketiga, Anda juga dapat menghapusnya, tetapi aplikasi itu tidak akan berfungsi lagi. Anda harus menggunakan uninstaller aplikasi itu daripada menghapus Python secara langsung.  Jika Python datang dengan sistem operasi Anda, menghapusnya tidak dianjurkan. Jika Anda menghapusnya, alat apa pun yang ditulis dengan Python tidak akan lagi berjalan, dan beberapa di antaranya mungkin penting bagi Anda. Menginstal ulang seluruh sistem akan diminta untuk memperbaiki hal-hal lagi.
+Wa'alaykumussalam. Namaku Karen, ada yang ingin kamu tanyakan?
+Kabarku baik, terima kasih. Ada yang ingin kamu tanyakan?
+Sst, rahasia. Bisa bertanya mangenai Python saja?
+Maaf, aku kurang mengerti pertanyaanmu. Bisa bertanya mangenai Python saja?
+Tidak. Bisa bertanya mangenai Python saja?
+Modul atexit menyediakan fungsi yang mirip dengan onexit() di C.
+Dengan mengimplementasi generator untuk random number. Yaitu dengan import random.
+Kamu bisa mengganti switch case dengan if... elif... elif... else. Meski beget, sudah ada pengajuan untuk sintaks switch-statement sih..
+Python adalah bahasa pemrograman tingkat tinggi yang dapat diterapkan ke banyak kelas masalah yang berbeda. Bahasa ini dilengkapi dengan pustaka standar besar seperti untuk pemrosesan string (ekspresi reguler, Unicode, penghitungan perbedaan antara file), protokol Internet (HTTP, FTP, SMTP, XML-RPC, POP, IMAP, pemrograman CGI), rekayasa perangkat lunak (pengujian unit, pencatatan, pembuatan profil, penguraian kode Python), dan antarmuka sistem operasi (panggilan sistem, sistem file, soket TCP / IP). Berbagai ekstensi pihak ketiga juga tersedia.
+Self adalah nama yang konvensional untuk argumen pertama dari sebuah method. Misalnya, method yang didefinisikan metho(self, a, b, c) dipanggil dengan x.metho(a,b,c) di mana x adalah instans dari suatu kelas.
+Guido van Rossum (lahir 31 Januari 1956) adalah seorang Belanda yang menciptakan bahasa pemrograman Python.
+Sangat stabil. Biasanya ada jeda waktu 18 bulan tiap rilis besar.
+Tentu saja ada. Klik saja https://wiki.python.org/moin/BeginnersGuide
+Semua versi alfa dan beta ada di https://www.python.org/downloads/
+Untuk melaporkan bug, silakan gunakan instalasi Roundup pada https://bugs.python.org/ . Kamu harus punya akun Roundup dahulu sebelumnya, agar Python dapat dengan mudah menghubungimu jika ada pertanyaan lebih lanjut.
+Ada buanyaaaak sekali. Kamu bisa cari di mesin pencari dengan kata kunci 'Python' dan 'language' atau klik https://wiki.python.org/moin/PythonBooks untuk daftar lengkapnya.
+Di Python, variabel yang direferensi dalam sebuah fungsi secara implisit sudah dinyatakan global. Seandainya  variabel di-assign sebuah nilai di dalam tubuh fungsi, dia diasumsikan lokal kecuali dinyatakan secara eksplisit sebagai global.
+Argumen dalam Python dilewatkan dengan assignment (passed by assignment). Karena assignment hanya membuat referensi ke objek, dan tidak ada alias antara nama argumen dalam fungsi yang memanggil dan dipanggil, maka dari itu tidak ada call-by-reference. Meski begitu, terdapat beberapa cara untuk mencapai efek yang sama seperti call-by-reference.
+Misal x adalah instans dari suatu kelas yang didefinisikan user. dir(x) akan mengembalikan list yang terurut alfabet yang berisi nama dari atribut instans, method, dan atribut yang didefinisikan kelasnya.
+Tentu ada. Sintaksnya: [on_true] if [expression] else [on_false]
+Ki Hajar Dewantara
+Kunto dan Achmad Soebardjo
+Mr. I. Gusti Ktut Pudja
+Tanggal 5 Oktober 1945
+Jumlahnya 8 provinsi
+Badan Pusat Keselamatan Rakyat
+Di rumah Laksmana Maeda
+Dibawanya Soekarno dan Hatta ke Rengasdengklok oleh golongan muda (para pemuda).
+Dipercaya rumah itu aman dari pengaruh dan pengawasan tentara Jepang.
+Dr. Buntaran Martoatmojo
+Gedung Sonobudoyo
+Golongan Tua dan Golongan Muda
+Hasil Sidang PPKI 18 Agustus adalah: Mengesahkan Undang-Undang Dasar (UUD) Republik Indonesia. Pemilihan Ir. Soekarno sebagai Presiden pertama Indonesia dan Drs. Mohammad Hatta sebagai Wakil Presiden RI, dan Pembentukan Komite Nasional
+Mengetik naskah teks proklamasi
+Menunggu kesepakatan Marsekal Terauchi melalui PPKI
+Parlementer
+Pasukan PETA
+Pembela Tanah Air
+Pengibaran bendera Indonesia di Hotel Jalan Bali.
+Presiden Soekarno
+Soehoed dan Latief Hendraningrat
+Soekarno, Moh. Hatta, dan Ahmad Subarjo
+Sri Sultan Hamengkubuwono IX
+Sukarni, B.M Diah, Yusuf Kunto, Wikana, Sayuti Melik, Adam Malik, dan Chaerul Saleh.
+Supriyadi
+Tanggal 18 Agustus 1945
+Tanggal 19 september 1945
+Tanggal 5 September 1945
+Terjadinya pertempuran di Surabaya pada tanggal 10 November 1945
+Hasil Sidang PPKI 18 Agustus adalah Pembagian wilayah Indonesia menjadi 8 Provinsi dengan dipimpin oleh Gubernur
+Tanggal 14 Agustus 1945
+Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia
+Tanggal 11 Maret 1945
+Panitia Persiapan Kemerdekaan Indonesia
+Jumlah anggota BPUPKI sebanyak 62 orang
+Tugas utama BPUPKI adalah mempelajari dan menyelidiki semua yang berkaitan dengan pembentukan Negara Indonesia.
+Presiden Soekarno, sebagai upaya pengamanan NKRI karena adanya Sekutu.
+Tujuan dibentuk BKR : Menjaga kelancara dalam mempersiapkan kemerdekaan pada bidang ketahanan wilayah, Mengamankan wilayah Indonesia dari penjajah, dan Menghilangkan pengaruh asing yang ada di Indonesia

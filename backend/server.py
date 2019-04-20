@@ -8,9 +8,9 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/', methods=['GET'])
 def respond():
-    question = request.get_json()
+    question = request.args["question"]
     print(question)
-    response = answer(question["question"])
-    return jsonify({"question": question["question"], "response": response})
+    response = answer(question)
+    return jsonify({"question": question, "response": response})

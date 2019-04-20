@@ -19,45 +19,35 @@
     <script type="text/javascript" src="static/js/jquery-3.4.0.min.js"></script>
     <script>
     $("input[name='send']").click(function() {
-        dataReq = {
-          question : $("#msg").val(),
-        };
-        // console.log(JSON.stringify(dataReq));
-        $.ajax({
-            crossDomain: true,
-            type: 'post',
-            dataType: 'jsonp',
-            url : 'http://127.0.0.1:5000/',           
-            contentType: 'application/json;charset=UTF-8',
-            data: JSON.stringify(dataReq),
-            success: function() { 
-              alert("Success"); 
-            },  
-            error: function (xhr, status) {
-              alert("error");
-            }
-        });   
-        $("#msg").attr("value", "");
-        return false;  
+      var usermsg = $("#msg").val();
+      usermsgurlify = usermsg.trim().replace(/\s/g, '%20');
+
+      var url = "http://127.0.0.1:5000/?question=";
+      var totalurl = url.concat(usermsgurlify);
+      alert(totalurl);
+      $.get(totalurl, function(data, status){
+        alert("Question: " + data["question"] + "Response " + data["response"]);
+        console.log(data);
+      });
     });
 
 
-      function loadLog() {
-        var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-          $.ajax({
-          url: "log.html",
-          cache: false,
-          success: function(html) {
-            $("#chatbox").html(html);        
-            var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-            if (newscrollHeight > oldscrollHeight) {
-              $("#chatbox").animate({ scrollTop: newscrollHeight }, "normal");
-            }
-          }
-        });
-      }
+      // function loadLog() {
+      //   var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+      //     $.ajax({
+      //     url: "log.html",
+      //     cache: false,
+      //     success: function(html) {
+      //       $("#chatbox").html(html);        
+      //       var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+      //       if (newscrollHeight > oldscrollHeight) {
+      //         $("#chatbox").animate({ scrollTop: newscrollHeight }, "normal");
+      //       }
+      //     }
+      //   });
+      // }
 
-      setInterval(loadLog, 2000);
+      //setInterval(loadLog, 2000);
     </script>
   </body>
 </html>

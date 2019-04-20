@@ -36,7 +36,7 @@ def boyerMoore(question_user, question_database):
     while (i <= n-1):
         if (question_database[j] == question_user[i]):
             if (j == 0):  # Sudah semua dicek
-                return 1
+                return question_user/question_database
             else:
                 i -= 1
                 j -= 1

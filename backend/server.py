@@ -5,5 +5,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def respond():
-    response = answer(request.form['question'])
-    return jsonify(response)
+    question = request.form['question']
+    response = answer(question)
+    return jsonify({"question": question, "response" : response})

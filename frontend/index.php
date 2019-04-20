@@ -10,7 +10,6 @@
     <div id="chatbox"> 
       
     </div>
-
     <form action="" method="POST">
       <input type="text" name="msg" id="msg" value="" />
       <input type="submit" name="send" value="Send" />
@@ -21,33 +20,40 @@
     $("input[name='send']").click(function() {
       var usermsg = $("#msg").val();
       usermsgurlify = usermsg.trim().replace(/\s/g, '%20');
-
       var url = "http://127.0.0.1:5000/?question=";
       var totalurl = url.concat(usermsgurlify);
-      alert(totalurl);
-      $.get(totalurl, function(data, status){
-        alert("Question: " + data["question"] + "Response " + data["response"]);
-        console.log(data);
+
+      $.get(totalurl, function(response, status){
+        alert("Question: " + response["question"] + "\nResponse " + response["response"]);
+        $.ajax({
+            url: '/process.php',
+            type: 'post',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: response
+        });
       });
     });
 
+    function loadLog(){		
+		var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height before the request
+		$.ajax({
+			url: "log.html",
+			cache: false,
+			success: function(html){		
+				$("#chatbox").html(html); //Insert chat log into the #chatbox div	
+				
+				//Auto-scroll			
+				var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height after the request
+				if(newscrollHeight > oldscrollHeight){
+					$("#chatbox").animate({ scrollTop: newscrollHeight }, 'normal'); //Autoscroll to bottom of div
+				}				
+		  	},
+		});
+	}
 
-      // function loadLog() {
-      //   var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-      //     $.ajax({
-      //     url: "log.html",
-      //     cache: false,
-      //     success: function(html) {
-      //       $("#chatbox").html(html);        
-      //       var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
-      //       if (newscrollHeight > oldscrollHeight) {
-      //         $("#chatbox").animate({ scrollTop: newscrollHeight }, "normal");
-      //       }
-      //     }
-      //   });
-      // }
+  setInterval (loadLog, 2500);
 
-      //setInterval(loadLog, 2000);
     </script>
   </body>
 </html>

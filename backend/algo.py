@@ -18,11 +18,10 @@ def func(e):
 
 def preprocess(sentence):
     stemmed_sentence = stemmer.stem(sentence)
-    # split_sentence = stemmed_sentence.split(' ')
-    # split_sentence = [x for x in split_sentence if x not in stop_words]
-    # to_base = map(func, split_sentence)
-    # clean_sentence = ' '.join(to_base)
-    return stemmed_sentence
+    split_sentence = stemmed_sentence.split(' ')
+    to_base = map(func, split_sentence)
+    clean_sentence = ' '.join(to_base)
+    return clean_sentence
 
 
 def answer(question_user):

@@ -2,16 +2,34 @@ from .utils import sample_db
 from .kmp import KMP
 from .bm import boyerMoore
 from .regex import regex_sample
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+import string
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+
+def preprocess(sentence):
+    sentence = sentence.translate(str.maketrans('', '', string.punctuation))
+    root_word = stemmer.stem(sentence)
+    result = root_word
+    return result
 
 
 def answer(question_user):
+<<<<<<< HEAD
     
+=======
+    question_user = preprocess(question_user)
+>>>>>>> 3c97ab60989f17eac294e12f20500e3c4b61dc75
     for q_db in sample_db:
-        if KMP(question_user, q_db) > 0.9:
+        question_in_db = str(q_db)
+        question_in_db = preprocess(question_in_db)
+        if KMP(question_user, question_in_db) > 0.9:
             return sample_db[q_db]
-        elif boyerMoore(question_user, q_db) > 0.9:
+        elif boyerMoore(question_user, question_in_db) > 0.9:
             return sample_db[q_db]
-        elif regex_sample(question_user, q_db):
+        elif regex_sample(question_user, question_in_db):
             return sample_db[q_db]
     top_three = [KMP(question_user, q_db) for q_db in sample_db]
     top_three.sort()

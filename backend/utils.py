@@ -1,4 +1,4 @@
-# sample_db = {"Pertanyaan ? ": "Jawaban", "Pertanyaan juga ?": "Jawaban juga"}
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 
 def create_db(q_file, ans_file):
@@ -7,15 +7,20 @@ def create_db(q_file, ans_file):
     answers = open(ans_file, "r")
     for q, a in zip(questions, answers):
         dict[q] = a
-
     return dict
-
-
-def main():
-    db = create_db("../QnA/question.txt", "../QnA/answer.txt")
-    print(db)
 
 sample_db = create_db("../QnA/question.txt", "../QnA/answer.txt")
 
-if __name__ == "__main__":
-    main()
+
+synonym_raw = {"membangun": "membuat",
+               "menciptakan": "membuat",
+               "menimbulkan": "membuat",
+               "merancang": "membuat"}
+
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+synonym = {stemmer.stem(w): stemmer.stem(synonym_raw[w])
+           for w in synonym_raw.keys()}
+
+print(synonym)

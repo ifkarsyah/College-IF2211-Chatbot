@@ -36,10 +36,10 @@ def boyerMoore(question_user, question_database):
     while (i <= n-1):
         if (question_database[j] == question_user[i]):
             if (j == 0):  # Sudah semua dicek
-                return question_user/question_database
+                return len(question_user)/len(question_database)
             else:
-                i -= 1
-                j -= 1
+                i = i - 1
+                j = j - 1
         else:
             lo = last[ord(question_user[i])]  # Mencari last occurrence
             i = i + m - min(j, 1+lo)  # i new sejajar dengan j new

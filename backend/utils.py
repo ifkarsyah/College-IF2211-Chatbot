@@ -24,7 +24,7 @@ def add_stop_word(filename):
     stop_words = {"itu"}
     with open(filename) as file:
         for w in file:
-            stop_words.add(w)
+            stop_words.add(w.rstrip('\n'))
     return stop_words
 
 

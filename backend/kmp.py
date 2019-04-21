@@ -31,7 +31,7 @@ def KMP(pattern, text):
             i += 1
             j += 1
         if j == len(pattern):
-            return len(pattern) / len(text)
+            return len(pattern) / float(len(text))
         if i < len(text) and pattern[j] != text[i]:
             if j != 0:
                 j = lps[j-1]

@@ -9,14 +9,9 @@ def create_db(q_file, ans_file):
         dict[q] = a
     return dict
 
+
 sample_db = create_db("../QnA/question.txt", "../QnA/answer.txt")
-
-
-synonym_raw = {"membangun": "membuat",
-               "menciptakan": "membuat",
-               "menimbulkan": "membuat",
-               "merancang": "membuat",
-               "menggunakan": "memakai"}
+synonym_raw = create_db("../QnA/synonym_ss.txt", "../QnA/synonym_base.txt")
 
 
 factory = StemmerFactory()
@@ -24,4 +19,13 @@ stemmer = factory.create_stemmer()
 synonym = {stemmer.stem(w): stemmer.stem(synonym_raw[w])
            for w in synonym_raw.keys()}
 
-stop_words = {"itu", "kah"}
+
+def add_stop_word(filename):
+    stop_words = {"itu"}
+    with open(filename) as file:
+        for w in file:
+            stop_words.add(w)
+    return stop_words
+
+
+stop_words = add_stop_word("../QnA/stopword.txt")

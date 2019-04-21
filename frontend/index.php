@@ -25,6 +25,7 @@
           data: JSON.stringify({ question: usermsg }),
           success: function(result) {
             $.post("process.php", result);
+            console.log(result);
           }
         });
         return false;

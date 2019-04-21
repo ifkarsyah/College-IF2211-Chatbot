@@ -2,10 +2,23 @@ from .utils import sample_db
 from .kmp import KMP
 from .bm import boyerMoore
 from .regex import regex_sample
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+import string
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+
+def preprocess(sentence):
+    root_word = stemmer.stem(sentence)
+    result = root_word
+    return result
 
 
 def answer(question_user):
+    # question_user = preprocess(question_user)
     for q_db in sample_db:
+        # q_db = preprocess(question_user)
         if KMP(question_user, q_db) > 0.9:
             return sample_db[q_db]
         elif boyerMoore(question_user, q_db) > 0.9:

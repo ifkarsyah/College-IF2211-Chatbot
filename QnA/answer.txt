@@ -5,7 +5,7 @@ Sistem Komunikasi Satelit Domestik
 17 April 2019
 4 Kali
 5 tahun sekali
-Bandung Lautan API
+Bandung Lautan API: Ferdi, Garda, Irena
 Python Flask Framework, PHP, Apache, HTML,CSS,JavaScript
 DKI Jakarta
 Jayakarta

@@ -1,10 +1,10 @@
-Siapa nama koordinator dosen mata kuliah strategi algoritma 2018/2019? Rinaldi Munir
-Siapa nama koordas strategi algoritma? Kevin Andrian Liwinata
-Berapa jumlah SKS minimal untuk lulus S1 di ITB? 144 SKS
-Apa kepanjangan SKSD? Sistem Komunikasi Satelit Domestik
-Tanggal berapa diadakan pemilu tahun ini? 17 April 2019
-Sudah berapa kali diadakan pemilu presiden? 4 Kali
-Pemilu diadakan berapa kali setahun? 5 tahun sekali
+Siapa nama koordinator dosen mata kuliah strategi algoritma 2018/2019?
+Siapa nama koordas strategi algoritma? 
+Berapa jumlah SKS minimal untuk lulus S1 di ITB? 
+Apa kepanjangan SKSD?
+Tanggal berapa diadakan pemilu tahun ini? 
+Sudah berapa kali diadakan pemilu presiden?
+Pemilu diadakan berapa kali setahun?
 Siapa saja pembuat anda? 
 Apa saja stack yang dipakai untuk membuat anda? 
 Apa nama ibukota Indonesia? 

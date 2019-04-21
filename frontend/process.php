@@ -8,7 +8,7 @@ $bot_cont = '<div class="container">';
 $user_cont = '<div class="container darker">';
 
 $bot_img = '<img src="static/img/bot.png" alt="Avatar" style="width:100%;">';
-$user_img = '<img src="static/img/bot.png" alt="Avatar" class="right" style="width:100%;">';
+$user_img = '<img src="static/img/user.png" alt="Avatar" class="right" style="width:100%;">';
 
 $bot_msg = "<p>" . $question . "</p>";
 $user_msg = "<p>" . $answer . "</p>";

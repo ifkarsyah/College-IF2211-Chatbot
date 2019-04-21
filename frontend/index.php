@@ -29,17 +29,21 @@
             console.log(result);
           }
         });
-
-        $.ajax({
-          type: "GET",
-          url: "log.html",
-          success: function(result) {
-            $('#chatbox').load("log.html");
-          }
-        });
-
         return false;
       });
+      function start() {
+        $(document).ready(function(){
+          $.ajax({
+            type: "GET",
+            url: "log.html",
+            success: function(result) {
+              $('#chatbox').load("log.html");
+            }
+          });
+        });
+      }
+
+      setInterval(start, 2000);
       
     </script>
   </body>

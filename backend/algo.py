@@ -5,6 +5,7 @@ from .regex import regex_sample
 
 
 def answer(question_user):
+    
     for q_db in sample_db:
         if KMP(question_user, q_db) > 0.9:
             return sample_db[q_db]

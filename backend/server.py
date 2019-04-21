@@ -12,5 +12,5 @@ CORS(app)
 def respond():
     question = request.get_json()
     print(question)
-    response = answer(question["question"])
-    return jsonify({"question": question["question"], "response": response})
+    # response = answer(question["question"])
+    return jsonify({"question": question["question"], "response": "Hey"})

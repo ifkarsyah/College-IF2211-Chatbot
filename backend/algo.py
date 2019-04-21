@@ -17,11 +17,7 @@ def preprocess(sentence):
 
 
 def answer(question_user):
-<<<<<<< HEAD
-    
-=======
     question_user = preprocess(question_user)
->>>>>>> 3c97ab60989f17eac294e12f20500e3c4b61dc75
     for q_db in sample_db:
         question_in_db = str(q_db)
         question_in_db = preprocess(question_in_db)

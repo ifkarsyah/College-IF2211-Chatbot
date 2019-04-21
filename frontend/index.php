@@ -26,7 +26,7 @@
           success: function(result) {
             $.post("process.php", result);
             console.log(result);
-          }
+          }   
         });
         return false;
       });

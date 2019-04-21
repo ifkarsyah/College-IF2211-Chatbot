@@ -4,17 +4,17 @@ $question = $_POST['question'];
 $answer = $_POST['answer'];
 $fp = fopen("log.html", 'a');
 
-$bot_cont = '<div class="container">';
-$user_cont = '<div class="container darker">';
+$bot_cont = '<div class="chat bot">';
+$user_cont = '<div class="chat me">';
 
-$bot_img = '<img src="static/img/bot.png" alt="Avatar" style="width:100%;">';
-$user_img = '<img src="static/img/user.png" alt="Avatar" class="right" style="width:100%;">';
+$bot_img = '<div class="user-photo"><img src="static/giphy.gif" alt="Avatar"> </div>';
+$user_img = '<div class="user-photo"><img src="static/giphy.gif" alt="Avatar"> </div>';
 
-$bot_msg = "<p>" . $question . "</p>";
-$user_msg = "<p>" . $answer . "</p>";
+$bot_msg = "<p class = 'chat-message' >" . $question . "</p>";
+$user_msg = "<p class = 'chat-message' > " . $answer . "</p>";
 
-$bot_full = $bot_cont . $bot_img . $bot_msg . "</div>";
 $user_full = $user_cont . $user_img . $user_msg . "</div>";
+$bot_full = $bot_cont . $bot_img . $bot_msg . "</div>";
 
 
 

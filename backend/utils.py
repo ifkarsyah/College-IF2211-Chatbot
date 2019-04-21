@@ -15,7 +15,8 @@ sample_db = create_db("../QnA/question.txt", "../QnA/answer.txt")
 synonym_raw = {"membangun": "membuat",
                "menciptakan": "membuat",
                "menimbulkan": "membuat",
-               "merancang": "membuat"}
+               "merancang": "membuat",
+               "menggunakan": "memakai"}
 
 
 factory = StemmerFactory()
@@ -23,4 +24,4 @@ stemmer = factory.create_stemmer()
 synonym = {stemmer.stem(w): stemmer.stem(synonym_raw[w])
            for w in synonym_raw.keys()}
 
-print(synonym)
+stop_words = {"itu", "kah"}

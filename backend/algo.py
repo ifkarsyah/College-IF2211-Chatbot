@@ -1,4 +1,4 @@
-from .utils import sample_db
+from .utils import sample_db, synonym, stop_words
 from .kmp import KMP
 from .bm import boyerMoore
 from .regex import regex_sample
@@ -9,11 +9,20 @@ factory = StemmerFactory()
 stemmer = factory.create_stemmer()
 
 
+def func(e):
+    if e in synonym:
+        return synonym[e]
+    else:
+        return e
+
+
 def preprocess(sentence):
-    sentence = sentence.translate(str.maketrans('', '', string.punctuation))
-    root_word = stemmer.stem(sentence)
-    result = root_word
-    return result
+    stemmed_sentence = stemmer.stem(sentence)
+    split_sentence = stemmed_sentence.split(' ')
+    split_sentence = [x for x in split_sentence if x not in stop_words]
+    to_base = map(func, split_sentence)
+    clean_sentence = ' '.join(to_base)
+    return clean_sentence
 
 
 def answer(question_user):
@@ -21,18 +30,13 @@ def answer(question_user):
     for q_db in sample_db:
         question_in_db = str(q_db)
         question_in_db = preprocess(question_in_db)
-        if KMP(question_user, question_in_db) > 0.9:
+        kmp = KMP(question_user, question_in_db)
+        bm = boyerMoore(question_user, question_in_db)
+        match = max(kmp, bm)
+        if match > 0.6:
+            print("match" + str(match))
             return sample_db[q_db]
-        elif boyerMoore(question_user, question_in_db) > 0.9:
-            return sample_db[q_db]
-        elif regex_sample(question_user, question_in_db):
-            return sample_db[q_db]
-    top_three = [KMP(question_user, q_db) for q_db in sample_db]
-    top_three.sort()
-    top_three.reverse()
-    top_three = top_three[:3]
-    msg_error = "Saya Bingung. Mungkin anda ingin menanyakan hal berikut: \n"
-    msg_error += "1. " + top_three[0]
-    msg_error += "2. " + top_three[1]
-    msg_error += "3. " + top_three[2]
-    return msg_error
+    for q_db in sample_db:
+        if regex_sample(question_user, question_in_db):
+                return sample_db[q_db]
+    return "Aku bingung"

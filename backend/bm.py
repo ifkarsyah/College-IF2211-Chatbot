@@ -36,7 +36,7 @@ def boyerMoore(question_user, question_database):
     while (i <= n-1):
         if (question_database[j] == question_user[i]):
             if (j == 0):  # Sudah semua dicek
-                return len(question_user)/len(question_database)
+                return len(question_user)/float(len(question_database))
             else:
                 i = i - 1
                 j = j - 1

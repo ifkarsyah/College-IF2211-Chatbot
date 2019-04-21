@@ -7,7 +7,6 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Karen</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"> -->
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
   </head>
 
@@ -15,14 +14,6 @@
     <div class = "chatbox_white">
       <div class = "chatlogs" id= "chatbox">
         
-        <div class ="chat bot">
-          <div class="user-photo"><img src="static/giphy.gif"></div>
-          <p class = "chat-message">Halo namaku Karen  </p>
-        </div>
-        <!-- <div class ="chat me">
-          <div class="user-photo"><img src="img/player.png"></div>
-          <p class = "chat-message">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-        </div> -->
 
     </div>
 
@@ -32,11 +23,6 @@
           <button type="submit" name="send" value="Send">Send</button>
         </form>
       </div>
-
-
-    <div id="chatbox" class="scroll" style="overflow-y: auto;">
-  
-    </div>
 
 
     <script type="text/javascript" src="static/js/jquery-3.4.0.min.js"></script>
@@ -62,6 +48,7 @@
             url: "log.html",
             success: function(result) {
               $('#chatbox').load("log.html");
+              console.log("reload");;
             }
           });
         });

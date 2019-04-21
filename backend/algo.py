@@ -29,13 +29,10 @@ def answer(question_user):
     for q_db in sample_db:
         question_in_db = str(q_db)
         question_in_db = preprocess(question_in_db)
-        print(question_user)
-        print(question_in_db)
         kmp = KMP(question_user, question_in_db)
         bm = boyerMoore(question_user, question_in_db)
         match = max(kmp, bm)
         if match > 0.6:
-            print("match" + str(match))
             return sample_db[q_db]
 #     for q_db in sample_db:
 #         if regex_sample(question_user, question_in_db):

@@ -1,9 +1,3 @@
-Halo
-Hi
-Selamat Pagi
-Selamat Siang
-Selamat Sore
-Selamat Malam
 Apa Python?
 Apa itu Python Software Foundation?
 Bagaimana cara mendapatkan dokumentasi Python?

@@ -1,9 +1,3 @@
-Halo. Namaku Karen, ada yang ingin kamu tanyakan?
-Hi. Namaku Karen, ada yang ingin kamu tanyakan?
-Selamat Pagi. Namaku Karen, ada yang ingin kamu tanyakan?
-Selamat Siang. Namaku Karen, ada yang ingin kamu tanyakan?
-Selamat Sore. Namaku Karen, ada yang ingin kamu tanyakan?
-Selamat Malam. Namaku Karen, ada yang ingin kamu tanyakan?
 Python adalah salah satu bahasa pemrograman yang sangat powerfull dan mudah untuk dipelajari. Python memiliki struktur data tingkat tinggi yang sangat efisien dan sederhana tapi efektif untuk penerapan pemrograman berorientasi objek.
 Python Software Foundation adalah organisasi independen dan nonprofit organization yang memegang hak cipta Python 2.1 dan seterusnya.
 Kamu bisa mendapatkannya di https://docs.python.org/3/

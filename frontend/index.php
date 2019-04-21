@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css">
     <title>Stima Chatbot</title>
   </head>
 
   <body>
-    <div id="chatbox"></div>
+    <div id="chatbox" class="scroll"></div>
 
     <form action="" method="POST">
       <input type="text" name="msg" id="msg" value="" />
@@ -28,9 +29,17 @@
             console.log(result);
           }
         });
+
+        $.ajax({
+          type: "GET",
+          url: "log.html",
+          success: function(result) {
+            $('#chatbox').load("log.html");
+          }
+        });
+
         return false;
       });
-
       
     </script>
   </body>

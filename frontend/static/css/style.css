@@ -10,15 +10,22 @@ body{
 }
 
 .chatbox_white{
-	width: 40%;
+	width: 60%;
 	min-width: 390px;
-	height: 70%;
+	height: 90%;
 	background: #fff;
 	padding: 25px;
 	margin: 20px auto;
 	box-shadow: 0 3px #ccc;
 }
 
+.chat .user-photo{
+	width: 60px;
+	height: 60px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+}
 
 .chatlogs{
 	padding: 10px;
@@ -28,6 +35,82 @@ body{
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+
+@media only screen and (max-width: 800px) {
+
+	.chatlogs{
+    padding: 10px;
+    width: 100%;
+    height: -webkit-fill-available;
+    background: #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+	}
+
+	.chatbox_white {
+    width: 100%;
+    min-width: 390px;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+	}
+	.chat .user-photo{
+		width: 60px;
+		height: 60px;
+		background: #ccc;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	
+}
+
+@media only screen and (max-width: 480px){
+	.chatlogs{
+    padding: 10px;
+    width: 100%;
+    height: -webkit-fill-available;
+    background: #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+	}
+
+	.chatbox_white {
+    width: 100%;
+    min-width: 390px;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+	}
+
+	.chat .user-photo{
+		width: 40px;
+		height: 40px;
+		background: #ccc;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	
+	.chat .user-photo img{
+		width: 100%;
+	}
+	
+	.chat .chat-message{
+		width: 80%;
+		padding: 15px;
+		margin: 5px 10px 0;
+		background: #1ddced;
+		border-radius: 10px;
+		color: #fff;
+		font-size: 18px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	
+}
+
 
 .chatlogs::-webkit-scrollbar{
 	width: 10px;
@@ -45,13 +128,6 @@ body{
 	margin-bottom: 10px;
 }
 
-.chat .user-photo{
-	width: 60px;
-	height: 60px;
-	background: #ccc;
-	border-radius: 50%;
-	overflow: hidden;
-}
 
 .chat .user-photo img{
 	width: 100%;

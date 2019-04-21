@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div id="chatbox" class="scroll"></div>
+    <div id="chatbox" class="scroll" style="overflow-y: auto;"></div>
 
     <form action="" method="POST">
       <input type="text" name="msg" id="msg" value="" />

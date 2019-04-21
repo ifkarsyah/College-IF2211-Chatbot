@@ -1,3 +1,23 @@
+Rinaldi Munir
+Kevin Andrian Liwinata
+144 SKS
+Sistem Komunikasi Satelit Domestik
+17 April 2019
+4 Kali
+5 tahun sekali
+Bandung Lautan API
+Python Flask Framework, PHP, Apache, HTML,CSS,JavaScript
+DKI Jakarta
+Jayakarta
+Knuth-Morris-Prat
+Magnus Carlsen
+Blackhole M87
+velove vexia
+Tujuh orang
+1945
+3 setengah tahun
+Jl. Pegangsaan Timur No.56
+Kantin Borju
 Python adalah salah satu bahasa pemrograman yang sangat powerfull dan mudah untuk dipelajari. Python memiliki struktur data tingkat tinggi yang sangat efisien dan sederhana tapi efektif untuk penerapan pemrograman berorientasi objek.
 Python Software Foundation adalah organisasi independen dan nonprofit organization yang memegang hak cipta Python 2.1 dan seterusnya.
 Kamu bisa mendapatkannya di https://docs.python.org/3/

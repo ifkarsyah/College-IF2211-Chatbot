@@ -1,3 +1,23 @@
+Siapa nama koordinator dosen mata kuliah strategi algoritma 2018/2019? Rinaldi Munir
+Siapa nama koordas strategi algoritma? Kevin Andrian Liwinata
+Berapa jumlah SKS minimal untuk lulus S1 di ITB? 144 SKS
+Apa kepanjangan SKSD? Sistem Komunikasi Satelit Domestik
+Tanggal berapa diadakan pemilu tahun ini? 17 April 2019
+Sudah berapa kali diadakan pemilu presiden? 4 Kali
+Pemilu diadakan berapa kali setahun? 5 tahun sekali
+Siapa saja pembuat anda? 
+Apa saja stack yang dipakai untuk membuat anda? 
+Apa nama ibukota Indonesia? 
+Nama ibukota Indonesia sebelum disebut Jakarta adalah? 
+Siapa pembuat algoritma KMP?
+Siapa pemain catur nomor satu dunia sekarang?
+Apa nama blackhole yang berada di tengah galaksi bimasakti?
+Siapa nama pemain karakter wanita yang direbutkan oleh kedua pria dalam lagu "adu rayu"?
+Berapa jumlah presiden Indonesia?
+Tahun berapa Indonesia merdeka?
+Berapa tahun Indonesia dijajah Jepang?
+Dimana Soekarno memproklamasikan kemerdekaan Indonesia?
+Dimana kantin terdekat Labtek 5?
 Apa Python?
 Apa itu Python Software Foundation?
 Bagaimana cara mendapatkan dokumentasi Python?

@@ -19,11 +19,10 @@
           <div class="user-photo"><img src="static/giphy.gif"></div>
           <p class = "chat-message">Halo namaku Karen  </p>
         </div>
-        <div class ="chat me">
-          <!-- <div class="user-photo"><img src="img/player.png"></div>
-          <p class = "chat-message">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p> -->
-
-        </div>
+        <!-- <div class ="chat me">
+          <div class="user-photo"><img src="img/player.png"></div>
+          <p class = "chat-message">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        </div> -->
 
     </div>
 
